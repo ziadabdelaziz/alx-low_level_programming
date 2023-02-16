@@ -2,8 +2,7 @@
 
 /**
  * main - the function that runs the program
- * Describtion: This function print a string to the terminal 
- * with new line at the end
+ * Describtion: Print a string to the terminal ending with '\n'.
  * Return: The program return 0 indicating successful execution
  */
 int main(void)
