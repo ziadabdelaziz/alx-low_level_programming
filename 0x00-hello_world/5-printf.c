@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - starting point 
- * Description: Print string to the terminal
- * Return: 0 indicatest successful execution 
+ * main - starting point.
+ * Description: Print string to the terminal.
+ * Return: 0 indicatest successful execution.
  */
 int main(void)
 {
