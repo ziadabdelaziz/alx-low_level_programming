@@ -7,7 +7,7 @@
  */
 void my_print_func(char *text)
 {
-	while(*text != '\0')
+	while (*text != '\0')
 	{
 		putchar(*text);
 		text++;
@@ -23,5 +23,5 @@ void my_print_func(char *text)
 int main(void)
 {
 	my_print_func("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-	return (0);
+	return (1);
 }
