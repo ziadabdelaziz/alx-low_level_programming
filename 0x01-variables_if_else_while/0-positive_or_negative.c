@@ -5,7 +5,8 @@
 int main(void)
 {
 	srand(time(NULL));
-	int r = rand();
+	int r;
+	r = rand();
 
 	if (r > 0)
 	{
