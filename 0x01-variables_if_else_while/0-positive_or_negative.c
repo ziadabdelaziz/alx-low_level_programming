@@ -4,8 +4,8 @@
 
 int main(void)
 {
-	srandom(time(NULL));
-	long int r = random();
+	srand(time(NULL));
+	long int r = rand();
 
 	if (r > 0)
 	{
