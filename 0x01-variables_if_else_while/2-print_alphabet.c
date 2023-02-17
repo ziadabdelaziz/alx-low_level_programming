@@ -7,15 +7,15 @@
 */
 int main(void)
 {
-    char *alpha;
+	char *alpha;
 
-    alpha = "abcdefghijklmnopqrstuvwxyz";
-    while (*alpha != '\0')
-    {
-        putchar(*alpha);
-        alpha++;
-    }
-    putchar('\n');
+	alpha = "abcdefghijklmnopqrstuvwxyz";
+	while (*alpha != '\0')
+	{
+		putchar(*alpha);
+		alpha++;
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
