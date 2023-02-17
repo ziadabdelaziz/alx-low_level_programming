@@ -2,9 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+* main - starting point
+* Description: identify the polarity of random number
+* Return: 0 indicate successful execution
+*/
 int main(void)
 {
 	int r;
+
 	srand(time(NULL));
 	r = rand();
 
