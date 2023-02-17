@@ -5,19 +5,19 @@
 int main(void)
 {
 	srand(time(NULL));
-	long int r = rand();
+	int r = rand();
 
 	if (r > 0)
 	{
-		printf("%ld is positive\n", r);
+		printf("%d is positive\n", r);
 	}
 	else if (r < 0)
 	{
-		printf("%ld is negative\n", r);
+		printf("%d is negative\n", r);
 	}
 	else
 	{
-		printf("%ld is zero\n", r);
+		printf("%d is zero\n", r);
 	}
 	return (0);
 }
