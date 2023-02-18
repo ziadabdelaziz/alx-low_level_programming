@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (l = 48; l < 58; l++)
 				{
-					if ((k - 48) * 10 + l > (i - 48) * 10 + j)
+					if ((k - 48) * 10 + l <= (i - 48) * 10 + j)
 						continue;
 					putchar(i);
 					putchar(j);
