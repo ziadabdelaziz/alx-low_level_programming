@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (l = 48; l < 58; l++)
 				{
-					if (i == k && l < j)
+					if (i == k && l <= j)
 						l = j + 1;
 
 					if (i == j && i == 57)
