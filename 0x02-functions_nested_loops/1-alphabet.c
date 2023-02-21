@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 * print_alphabet - print alphabet
 * Describtion: prints alphabet letters
