@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
-*
+* print_sign - number polarity
+* @n: number
+* Describtion: check number polarity
+* Return: if n > zero 0 else if zero 0 else -1
 */
 int print_sign(int n)
 {
