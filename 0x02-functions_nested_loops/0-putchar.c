@@ -10,9 +10,9 @@ int main(void)
 	char *str;
 
 	str = "_putchar";
-	while(str != '\0')
+	while(*str != '\0')
 	{
-		_putchar(str);
+		_putchar(*str);
 		str++;
 	}
 	return (0);
