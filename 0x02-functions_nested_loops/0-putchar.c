@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
 * main - program starting point
@@ -7,6 +7,13 @@
 */
 int main(void)
 {
-	puts("_putchar");
+	char *str;
+
+	str = "_putchar";
+	while(str != '\0')
+	{
+		_putchar(str);
+		str++;
+	}
 	return (0);
 }
