@@ -17,6 +17,6 @@ void print_to_98(int n)
 		if ((n > 98 && !step) || (n < 98 && step))
 			printf(", ");
 	}
-	while (n != 98)
+	while (n != 98);
 	putchar('\n');
 }
