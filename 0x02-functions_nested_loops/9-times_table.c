@@ -2,7 +2,7 @@
 
 /**
 * times_table - print times table
-* Describtion: prints all numbers from times table 
+* Describtion: prints all numbers from times table
 * Return: void
 */
 void times_table(void)
