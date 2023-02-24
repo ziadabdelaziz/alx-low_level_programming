@@ -12,18 +12,18 @@ int main(void)
 	{
 
 		if (n % 3 == 0 && n % 5 == 0)
-			puts("FizzBuzz);
+			printf("FizzBuzz");
 
 		else if (n % 3 == 0)
-			puts("Fizz");
+			printf("Fizz");
 
 		else if (n % 5 == 0)
-			puts("Buzz");
+			printf("Buzz");
 
 		else
 			printf("%d", n);
 
-		putchar(" ");
+		putchar(' ');
 	}
 	putchar('\n');
 
