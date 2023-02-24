@@ -10,6 +10,7 @@ void more_numbers(void)
 	int i;
 	int j;
 	int temp;
+
 	for (j = 0; j < 10; j++)
 	{
 		for (i = 48; i <= 62; i++)
@@ -18,7 +19,7 @@ void more_numbers(void)
 			if (i > 57)
 			{
 				_putchar('1');
-				temp -= 10;
+				temp = temp - 10;
 			}
 			_putchar(temp);
 		}
