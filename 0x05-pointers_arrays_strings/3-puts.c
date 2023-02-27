@@ -11,4 +11,5 @@ void _puts(char *str)
 
 	for (c = str; *c != '\0'; c++)
 		_putchar(*c);
+	_putchar('\n');
 }
