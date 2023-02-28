@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* print_rev - reverse string
+* rev_string - reverse string
 * @s: pointer to string beginning
 * Return: 0 indicates successfull execution
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char *r;
 	char *l;
