@@ -3,7 +3,8 @@
 
 /**
 * print_array - print elements of array
-* @str: pointer to string beginning
+* @a: array
+* @n: length of array
 * Return: 0 indicates successfull execution
 */
 void print_array(int *a, int n)
