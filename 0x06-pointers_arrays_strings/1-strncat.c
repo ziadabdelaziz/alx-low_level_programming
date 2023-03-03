@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* _strcat - concatinate string with limit
+* _strncat - concatinate string with limit
 * @dest: string
 * @src: string
 * @n: number of bytes used at most
 * Return: 0 indicates successfull execution
 */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int init;
