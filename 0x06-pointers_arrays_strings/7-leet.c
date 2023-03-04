@@ -1,52 +1,30 @@
 #include "main.h"
 
 /**
-* leet - encode string into 1337
-* @str: string
-* Return: 0 indicates successfull execution
-*/
-char *leet(char *str)
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
+ */
+
+char *leet(char *s)
 {
-	int i;
-	int len;
-	char *str1;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	len = 0;
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		len++;
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
 	}
 
-	str1 = malloc(sizeof(char) * len);
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if (str[i] == 'a' || str[i] == 'A')
-		{
-			str1[i] = 4;
-		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str1[i] = 3;
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str1[i] = 0;
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str1[i] = 7;
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str1[i] = 1;
-		}
-		else
-		{
-			str1[i] = str[i];
-		}
-	}
-
-	str = str1;
-
-	return (str);
+	return (s);
 }
