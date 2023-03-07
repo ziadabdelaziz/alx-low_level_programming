@@ -8,24 +8,14 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, search;
+	unsigned int i, j;
 
-	search = 1;
-	for (i = 0; *(s + i) != '\0' && search; i++)
-	{
+
+	for (i = 0; *(s + i) != '\0'; i++)
 		for (j = 0; *(accept + j) != '\0'; j++)
-		{
 			if (*(accept + j) == *(s + i))
-			{
-				search = 0;
-				break;
-			}
-		}
-	}
+				return (s + i);
 
-	if (search)
-		return ('\0');
-	else
-		return (s + i);
+	return ('\0');
 }
 
