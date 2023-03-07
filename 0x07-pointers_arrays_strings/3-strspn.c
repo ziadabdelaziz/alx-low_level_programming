@@ -16,6 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 	included = 1;
 	for (i = 0; *(s + i) != '\0' && included; i++)
 	{
+		included = 0;
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(accept + j) == *(s + i))
@@ -24,12 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				count++;
 				break;
 			}
-			included = 0;
 		}
 	}
-
-	if (*(s + i) == *(accept + i))
-		count++;
-
 	return (count);
 }
