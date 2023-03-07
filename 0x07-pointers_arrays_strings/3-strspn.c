@@ -9,16 +9,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, count;
+	bool included;
 
-	for (i = 0; *(s + i) != '\0' && *(s + i) != ' '; i++)
+	included = true;
+	for (i = 0; *(s + i) != '\0' && included; i++)
 	{
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(accept + j) == *(s + i))
 			{
+				included = true;
 				count++;
 				break;
 			}
+			included = false;
 		}
 	}
 
