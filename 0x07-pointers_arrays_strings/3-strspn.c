@@ -11,6 +11,8 @@ unsigned int _strspn(char *s, char *accept)
 	int i, j, count;
 	int included;
 
+	i = 0;
+	j = 0;
 	included = 1;
 	for (i = 0; *(s + i) != '\0' && included; i++)
 	{
