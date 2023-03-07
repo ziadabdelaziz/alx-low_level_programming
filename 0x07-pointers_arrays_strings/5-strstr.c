@@ -8,24 +8,22 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j, found, temp;
+	char *bhaystack;
+	char *pneedle;
 
-	for (i = 0; *(haystack + i) != '\0'; i++)
+	while (*haystack != '\0')
 	{
-		if (*(haystack + i) != *(needle))
-			continue;
+		bhaystack = haystack;
+		pneedle = needle;
 
-		found = 1;
-		temp = i;
-		for (j = 0; *(needle + j) != '\0'; j++)
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
 		{
-			if (*(needle + j) != *(haystack + temp))
-				found = 0;
-			temp++;
+			haystack++;
+			pneedle++;
 		}
-		if (found)
-			return (haystack + temp);
+		if (!*pneedle)
+			return (bhaystack);
+		haystack = bhaystack + 1;
 	}
-
 	return '\0';
 }
