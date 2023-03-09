@@ -19,9 +19,8 @@ int get_sqrt(int n, int i)
 
 
 /**
-* _pow_recursion - return x raised to the power of y
-* @x: integer
-* @y: integer
+* _sqrt_recursion - return square root
+* @n: integer
 * Return: integer
 */
 int _sqrt_recursion(int n)
@@ -35,7 +34,7 @@ int _sqrt_recursion(int n)
 	if (n == 1)
 		return (1);
 
-	return(get_sqrt(n, 2));
+	return (get_sqrt(n, 2));
 }
 
 
