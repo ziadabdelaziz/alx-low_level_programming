@@ -29,7 +29,7 @@ int is_palindrome(char *s)
 	int len;
 
 	len = 0;
-	for(i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 		len++;
 
 	return (check_palindrom(s, 0, len - 1));
