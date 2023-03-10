@@ -1,6 +1,19 @@
 #include "main.h"
 
 /**
+* get_length - return string length
+* @s: string
+* Return: string length
+*/
+int get_length(char *s)
+{
+	if (*s == '\0')
+		return (0);
+
+	return (1 + get_length(s + 1));
+}
+
+/**
 * check_palindrom - check palindrom
 * @s: string
 * @i: integer
@@ -25,12 +38,9 @@ int check_palindrom(char *s, int i, int j)
 */
 int is_palindrome(char *s)
 {
-	int i;
 	int len;
 
-	len = 0;
-	for (i = 0; *(s + i) != '\0'; i++)
-		len++;
+	len = get_length(s);
 
 	return (check_palindrom(s, 0, len - 1));
 }
