@@ -27,6 +27,8 @@ int main(int argc, char *argv[])
 			amount -= 10;
 		else if (amount >= 5)
 			amount -= 5;
+		else if (amount >= 2)
+			amount -= 2;
 		else
 			amount -= 1;
 		cnt++;
