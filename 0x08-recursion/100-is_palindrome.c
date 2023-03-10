@@ -15,7 +15,7 @@ int check_palindrom(char *s, int i, int j)
 	if (*(s + i) != *(s + j))
 		return (0);
 
-	return (is_prime(s, i + 1, j - 1));
+	return (check_palindrom(s, i + 1, j - 1));
 }
 
 /**
