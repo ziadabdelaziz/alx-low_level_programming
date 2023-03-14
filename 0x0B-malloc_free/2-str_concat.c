@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
-* _strdup - copy string
-* @str: string
-* Return: pointer to copied string
+* str_concat - concatinate two strings
+* @s1: string
+* @s2: string
+* Return: pointer to new string
 * if size = 0 -> NULL
 */
 char *str_concat(char *s1, char *s2)
@@ -16,11 +17,11 @@ char *str_concat(char *s1, char *s2)
 		return (0);
 
 	len1 = 0;
-	for (i = 0; *(s1 + i) != '\0'; i++)
+	for (i = 0; *(s1 + i) != '\0' && s1 != 0; i++)
 		len1++;
 
-	len2 = 0;
-	for (i = 0; *(s2 + i) != '\0'; i++)
+	len1 = 0;
+	for (i = 0; *(s2 + i) != '\0' && s2 != 0; i++)
 		len2++;
 
 	new = (char *) malloc(len1 + len2 + 1);
