@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -13,7 +14,7 @@ char *create_array(unsigned int size, char c)
     int i;
 
     if (!size)
-        return (nullptr);
+        return (0);
 
     arr = malloc(size);
     for (i = 0;i < size; i++)
