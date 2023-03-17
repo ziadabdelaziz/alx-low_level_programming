@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
 * _calloc - allocate memory
@@ -13,9 +12,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *memo;
 
-	memo = malloc (nmemb * size);
+	memo = malloc(nmemb * size);
 	if (memo == NULL)
 		return (NULL);
 
-	return (memo)
+	return (memo);
 }
