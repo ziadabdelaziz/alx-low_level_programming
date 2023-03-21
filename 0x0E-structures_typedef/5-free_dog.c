@@ -1,5 +1,5 @@
-#define <stdlib.h>
-#define "dog.h"
+#include <stdlib.h>
+#include "dog.h"
 
 /**
 * free_dog - free dog space
