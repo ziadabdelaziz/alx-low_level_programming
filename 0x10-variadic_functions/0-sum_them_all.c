@@ -3,12 +3,14 @@
 /**
 * sum_them_all - return sum of arguments
 * @n: integer
-* Return: 0 - success
+* Return: sum of the arguments
+* 0 is number of arguments = 0
 */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list valist;
-	int i, sum;
+	unsigned int i;
+	int sum;
 
 	if (n == 0)
 		return (0);
