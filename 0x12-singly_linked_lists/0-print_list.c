@@ -1,10 +1,10 @@
 #include "lists.h"
-
 /**
-* print_list - print list strings
-* @h: singly linked list
-* Return: number of nodes
-*/
+ * print_list - print list strings
+ * @h: singly linked list
+ * Return: number of nodes
+ */
+
 size_t print_list(const list_t *h)
 {
 	size_t cnt;
