@@ -22,5 +22,5 @@ int pop_listint(listint_t **head)
 	if (!first)
 		return (0);
 
-	return (first->n);
+	return ((*head)->n);
 }
