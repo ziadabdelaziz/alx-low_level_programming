@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* read_textfile - create a file and write to it
+* create_file - create a file and write to it
 * @filename: file
 * @text_content: string
 * Return: -1 if fails or 1 if success
