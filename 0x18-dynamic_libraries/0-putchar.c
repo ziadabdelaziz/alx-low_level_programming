@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
-* main - program starting point
-* Describtion: print "_putchar"
-* Return: 0 - success
-*/
-int main(void)
+ * _putchar - program starting point
+ * @c: character
+ * Describtion: print "_putchar"
+ * Return: 0 - success
+ */
+int _putchar(char c)
 {
-	char *str;
+	int num;
 
-	str = "_putchar";
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
-
-	return (0);
+	return (num);
 }
